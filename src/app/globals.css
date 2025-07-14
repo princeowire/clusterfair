@@ -1,7 +1,66 @@
 @import "tailwindcss";
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+} */
+
+/* ...existing code... */
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/assets/fonts/Nohemi-Black-BF6438cc565e67b.woff') format('woff'),
+       url('/assets/fonts/Nohemi-Black-BF6438cc58744d4.ttf') format('truetype'),
+       url('/assets/fonts/Nohemi-Black-BF6438cc5874bd2.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/assets/fonts/Nohemi-Bold-BF6438cc577b524.woff') format('woff'),
+       url('/assets/fonts/Nohemi-Bold-BF6438cc587b5b5.ttf') format('truetype'),
+       url('/assets/fonts/Nohemi-Bold-BF6438cc5812315.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/assets/fonts/Nohemi-ExtraBold-BF6438cc5761ae2.woff') format('woff'),
+       url('/assets/fonts/Nohemi-ExtraBold-BF6438cc5881baf.ttf') format('truetype'),
+       url('/assets/fonts/Nohemi-ExtraBold-BF6438cc58a4c3c.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/assets/fonts/Nohemi-ExtraLight-BF6438cc581502c.woff') format('woff'),
+       url('/assets/fonts/Nohemi-ExtraLight-BF6438cc58a2634.ttf') format('truetype'),
+       url('/assets/fonts/Nohemi-ExtraLight-BF6438cc57e06d5.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/assets/fonts/Nohemi-Light-BF6438cc5702321.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+  font-family: 'Nohemi', sans-serif;
+}
+
+/* ...existing code... */
+
+.clipped-box {
+  /* width: 100%; match SVG viewBox width */
+  /* height: 100%; match SVG viewBox height */
+  clip-path: url(#curvedBox);
+  -webkit-clip-path: url(#curvedBox);
 }
